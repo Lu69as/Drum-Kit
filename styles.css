@@ -7,46 +7,18 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
 footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
+color: #DBEDF3;
+font-family: sans-serif;
 }
-.w {
-  background-image: url(./images/crash.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.a {
-  background-image: url(./images/kick.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.s {
-  background-image: url(./images/snare.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.d {
-  background-image: url(./images/tom1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.j {
-  background-image: url(./images/tom2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.k {
-  background-image: url(./images/tom3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.l {
-  background-image: url(./images/tom4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  .w {background-image: url(./images/crash.png);
+} .a {background-image: url(./images/kick.png);
+} .s {background-image: url(./images/snare.png);
+} .d {background-image: url(./images/tom1.png);
+} .j {background-image: url(./images/tom2.png);
+} .k {background-image: url(./images/tom3.png);
+} .l {background-image: url(./images/tom4.png);
 }
 .set {
   margin: 10% auto;
@@ -74,6 +46,8 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .animated {
   position: absolute;
