@@ -1,32 +1,40 @@
+var wsound = new Audio('./sounds/crash.mp3').play();
+var asound = new Audio('./sounds/kick-bass.mp3').play();
+var ssound = new Audio('./sounds/snare.mp3').play();
+var dsound = new Audio('./sounds/tom-1.mp3').play();
+var jsound = new Audio('./sounds/tom-2.mp3').play();
+var ksound = new Audio('./sounds/tom-3.mp3').play();
+var lsound = new Audio('./sounds/tom-4.mp3').play();
+
 document.addEventListener("keydown", function (keyboard) {
     playSound(keyboard.key.toLowerCase());
     playAnimation(keyboard.key.toLowerCase());
    setTimeout(() => {
     stopAnimation(keyboard.key.toLowerCase());
-   }, 175); 
+   }, 175);
 });
 function playSound(key) {
     switch (key) {
         case 'w':
-            new Audio('./sounds/crash.mp3').play();
+            wsound.play();
             break;
         case 'a':
-            new Audio('./sounds/kick-bass.mp3').play();
+            asound.play();
             break;
         case 's':
-            new Audio('./sounds/snare.mp3').play();
+            ssound.play();
             break;
         case 'd':
-            new Audio('./sounds/tom-1.mp3').play();
+            dsound.play();
             break;
         case 'j':
-            new Audio('./sounds/tom-2.mp3').play();
+            jsound.play();
             break;
         case 'k':
-            new Audio('./sounds/tom-3.mp3').play();
+            ksound.play();
             break;
         case 'l':
-            new Audio('./sounds/tom-4.mp3').play();
+            lsound.play()
             break;
     }
 }
