@@ -24,6 +24,12 @@ function playSound(key) {
         case 'f':
             new Audio('./sounds/metal-pipe.mp3').play();
             break;
+        case 'g':
+            new Audio('./sounds/gun1.mp3').play();
+            break;
+        case 'h':
+            new Audio('./sounds/gun2.mp3').play();
+            break;
         case 'j':
             new Audio('./sounds/tom-2.mp3').play();
             break;
@@ -43,75 +49,12 @@ function stopAnimation(currentKey)
 {
     document.querySelector(`.${currentKey}`).classList.remove('pressed');
 }
-function playw() 
+function play(key) 
 {
-    playSound('w')
-    playAnimation('w')
+    playSound(key)
+    playAnimation(key)
     setTimeout(() => 
     {
-        stopAnimation('w');
-       }, 175);
-}
-function playa() 
-{
-    playSound('a')
-    playAnimation('a')
-    setTimeout(() => 
-    {
-        stopAnimation('a');
-       }, 175);
-}
-function plays() 
-{
-    playSound('s')
-    playAnimation('s')
-    setTimeout(() => 
-    {
-        stopAnimation('s');
-       }, 175);
-}
-function playd() 
-{
-    playSound('d')
-    playAnimation('d')
-    setTimeout(() => 
-    {
-        stopAnimation('d');
-       }, 175);
-}
-function playf() 
-{
-    playSound('f')
-    playAnimation('f')
-    setTimeout(() => 
-    {
-        stopAnimation('f');
-       }, 175);
-}
-function playj() 
-{
-    playSound('j')
-    playAnimation('j')
-    setTimeout(() => 
-    {
-        stopAnimation('j');
-       }, 175);
-}
-function playk() 
-{
-    playSound('k')
-    playAnimation('k')
-    setTimeout(() => 
-    {
-        stopAnimation('k');
-       }, 175);
-}
-function playl() 
-{
-    playSound('l')
-    playAnimation('l')
-    setTimeout(() => 
-    {
-        stopAnimation('l');
+        stopAnimation(key);
        }, 175);
 }
