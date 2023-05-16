@@ -7,6 +7,7 @@ document.addEventListener("keydown", function (keyboard)
     stopAnimation(keyboard.key.toLowerCase());
    }, 175);
 });
+
 function playSound(key) {
     switch (key) {
         case 'w':
@@ -41,6 +42,7 @@ function playSound(key) {
             break;
     }
 }
+
 function playAnimation(currentKey) 
 {
     document.querySelector(`.${currentKey}`).classList.add('pressed');
@@ -49,12 +51,13 @@ function stopAnimation(currentKey)
 {
     document.querySelector(`.${currentKey}`).classList.remove('pressed');
 }
-function play(key) 
+
+function play(playbtn) 
 {
-    playSound(key)
-    playAnimation(key)
+    playSound(playbtn)
+    playAnimation(playbtn)
     setTimeout(() => 
     {
-        stopAnimation(key);
+        stopAnimation(playbtn);
        }, 175);
 }
