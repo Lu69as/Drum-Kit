@@ -1,7 +1,9 @@
-document.addEventListener("keydown", function (keyboard) {
+document.addEventListener("keydown", function (keyboard) 
+{
     playSound(keyboard.key.toLowerCase());
     playAnimation(keyboard.key.toLowerCase());
-   setTimeout(() => {
+   setTimeout(() => 
+   {
     stopAnimation(keyboard.key.toLowerCase());
    }, 175);
 });
@@ -19,6 +21,9 @@ function playSound(key) {
         case 'd':
             new Audio('./sounds/tom-1.mp3').play();
             break;
+        case 'f':
+            new Audio('./sounds/metal-pipe.mp3').play();
+            break;
         case 'j':
             new Audio('./sounds/tom-2.mp3').play();
             break;
@@ -30,58 +35,83 @@ function playSound(key) {
             break;
     }
 }
-function playAnimation(currentKey) {
+function playAnimation(currentKey) 
+{
     document.querySelector(`.${currentKey}`).classList.add('pressed');
 }
-function stopAnimation(currentKey) {
+function stopAnimation(currentKey) 
+{
     document.querySelector(`.${currentKey}`).classList.remove('pressed');
 }
-function playw() {
+function playw() 
+{
     playSound('w')
     playAnimation('w')
-    setTimeout(() => {
+    setTimeout(() => 
+    {
         stopAnimation('w');
        }, 175);
 }
-function playa() {
+function playa() 
+{
     playSound('a')
     playAnimation('a')
-    setTimeout(() => {
+    setTimeout(() => 
+    {
         stopAnimation('a');
        }, 175);
 }
-function plays() {
+function plays() 
+{
     playSound('s')
     playAnimation('s')
-    setTimeout(() => {
+    setTimeout(() => 
+    {
         stopAnimation('s');
        }, 175);
 }
-function playd() {
+function playd() 
+{
     playSound('d')
     playAnimation('d')
-    setTimeout(() => {
+    setTimeout(() => 
+    {
         stopAnimation('d');
        }, 175);
 }
-function playj() {
+function playf() 
+{
+    playSound('f')
+    playAnimation('f')
+    setTimeout(() => 
+    {
+        stopAnimation('f');
+       }, 175);
+}
+function playj() 
+{
     playSound('j')
     playAnimation('j')
-    setTimeout(() => {
+    setTimeout(() => 
+    {
         stopAnimation('j');
        }, 175);
 }
-function playk() {
+function playk() 
+{
     playSound('k')
     playAnimation('k')
-    setTimeout(() => {
+    setTimeout(() => 
+    {
         stopAnimation('k');
        }, 175);
 }
-function playl() {
+function playl() 
+{
     playSound('l')
     playAnimation('l')
-    setTimeout(() => {
+    setTimeout(() => 
+    {
         stopAnimation('l');
        }, 175);
 }
